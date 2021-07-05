@@ -1,0 +1,39 @@
+body {
+  font-family: "Delius cursive";
+  padding: 0 4vw;
+}
+
+h2 {
+  color: #042d3b;
+  font-size: 2em;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  border-color: #000;
+}
+
+label,
+input,
+ul {
+  font-size: 1.2em;
+  margin-top: 5vh;
+}
+
+li {
+  padding: 2vh;
+}
+
+button {
+  font-size: 1.2em;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.selected {
+  color: #e30e0e;
+}

@@ -1,0 +1,28 @@
+body {
+  margin: 5vh 5vw;
+  padding: 5vh 5vw;
+  border: 1px solid lightgrey;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label,
+button {
+  font-size: 1em;
+}
+
+div {
+  padding-bottom: 3vh;
+}
+
+input[type="text"] {
+  padding: 3vh 3vw;
+  font-size: 1em;
+}
+
+p {
+  background: #ffc125;
+  color: #5e2612;
+  padding: 2vh 2vw;
+  visibility: hidden;
+}

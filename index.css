@@ -1,0 +1,11 @@
+body {
+  font-family: "Delius", cursive;
+  padding: 0 2vw;
+}
+header {
+  border-bottom: 0.1vw solid #f7b7b7;
+}
+footer {
+  margin-top: 5vh;
+  border-top: 0.1vw solid #f7b7b7;
+}

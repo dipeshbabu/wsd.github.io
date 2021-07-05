@@ -1,0 +1,14 @@
+body {
+  font-family: "Delius", cursive;
+  padding: 2vh 10vw;
+  line-height: 1.8;
+}
+
+article {
+  padding: 2vh 0;
+}
+
+p,
+ol li {
+  font-size: 1.4em;
+}

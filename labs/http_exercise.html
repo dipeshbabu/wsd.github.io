@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="HTTP and Security exercises" />
+    <title>Lab exercise HTTP and Security</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="http_exercise.css" />
+  </head>
+  <body>
+    <article>
+      <h2>1. What is the Hypertext Transfer Protocol (HTTP).</h2>
+      <p>
+        Hypertext Transfer Protocol is an application-level protocol, which is
+        used to fetch the resources such as HTML (Hyper Text Markup Language).
+        It was designed with the purpose of communication between web browsers
+        and web servers along with various other purposes. It tends to follow a
+        classical client-server model, whereby a client sends in a request and
+        waits for a response from the server.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>2. Why is HTTP called a stateless protocol?</h2>
+      <p>
+        HTTP is a stateless protocol, which means that the connection between
+        the browser and the server is lost once the transaction ends.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>
+        3. Describe the three phases of establishing a session using
+        client-server protocols such as HTTP.
+      </h2>
+      <p>
+        The three phases of client-server protocols such as HTTP are as follows:
+      </p>
+      <ol>
+        <li>
+          The client establishes a TCP connection (or the appropriate connection
+          if the transport layer is not TCP).
+        </li>
+        <li>The client sends its request, and waits for the answer.</li>
+        <li>
+          The server processes the request, sending back its answer, providing a
+          status code and appropriate data.
+        </li>
+      </ol>
+    </article>
+    <hr />
+    <article>
+      <h2>4. Describe the parameters of on a get and post request.</h2>
+      <p>
+        Both the GET and POST methods are transformer of data, which means that
+        they transfer data from the client to server in HTTP protocol, but the
+        GET appends the returning variables and thier values to the URL string,
+        whereas POST does not. POST intends for changing the server state, which
+        carries more data.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>
+        5. What are the HTTP response status code and What do the HTTP status
+        codes 200 and 404 indicate?
+      </h2>
+      <p>
+        HTTP response status codes determine whether a specific HTTP request has
+        been successfully completed. <br />
+        The HTTP <strong>200 OK</strong> success status code specifies - the
+        request has succeeded. A 200 response is cacheable by defualt. <br />
+        A success depends on the HTTP request method, here are the 4 of them:
+      </p>
+      <ol>
+        <li>
+          <strong>GET:</strong>&nbsp;The resource has been fetched and is
+          transmitted in the message body.
+        </li>
+        <li>
+          <strong>HEAD:</strong>&nbsp;The representation headers are included in
+          the response without any message body.
+        </li>
+        <li>
+          <strong>POST:</strong>&nbsp;The resource describing the result of the
+          action is transmitted in the message body.
+        </li>
+        <li>
+          <strong>TRACE:</strong>&nbsp;The message body contains the reqeust
+          message as received by the server.
+        </li>
+      </ol>
+      <p>
+        The HTTP <strong>404 NOT FOUND</strong>&nbsp;client error response code
+        specifies - the server cannot find the requested resource.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>6. What are HTTP cookies? Give an example.</h2>
+      <p>
+        The HTTP cookies are text files with small chunks of data - a server
+        sends to the user's web browser, which includes username and password
+        and are used to identify specific users and enhance users web browsing
+        experience.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>7. Why are cookies a security issue?</h2>
+      <p>
+        Any personal information - users give to a website, including credit
+        card information, will most likely to be stored in a cookie until the
+        users turned off the cookie feature in their browser. The cookies are
+        visible and can be changed by any end-user.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>8. Describe session hijacking and XSS.</h2>
+      <p>
+        <strong>Session Hijacking:</strong>&nbsp;It is an attack where a user
+        session is taken over by an attacker. A session begins when the user log
+        into a service, such as user's banking application and ends when user
+        log out. It happens when an attacker knows the victim's session ID
+        (session key). This can be acheived by stealing the session cookie or
+        persuading the user to click a malicious link containing a prepared
+        session ID.
+      </p>
+      <p>
+        <strong>Cros-site scripting (XSS):</strong>&nbsp;XSS is probably the
+        most hazardous and widespread technique of web session hijacking. By
+        exploiting server or application vulnerabilities, attackers can inject
+        client-side script (typically JavaScript) into web pages, causing user's
+        browser to execute arbitrary code when it loads a compromised page.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>9. Describe Cros-site request forgery (CSRF).</h2>
+      <p>
+        Cros-site request forgery (CSRF) is an attack vector - tricks a web
+        browser into executing an unwanted action in an application to which a
+        user is logged in. A successfull CSRF attack devastates both of the
+        business and user, which can consequentially in damaged client
+        relationships, unauthorised fund transfers, changed passwords and data
+        theft - including stolen session cookies.
+      </p>
+    </article>
+    <hr />
+    <article>
+      <h2>
+        10. What are Cros-site HTTP requests (CORS) and what requests use CORS?
+      </h2>
+      <p>
+        CORS is an HTTP header based structure - allows a server to specify any
+        other origins than its own from which a browser should permit loading of
+        resources. The CORS tool supports secure cross-origin reqeusts and data
+        transfers between browsers and servers. The browsers use CORS in APIs
+        such as XMLHttpRequest or Fetch to mitigate the risks of cross-origin
+        HTTP requests. For instance, an HTML page from Domain A
+        (http://domaina.example/) makes a request for an image on Domain B
+        (http://domainb.foo/image.jpg) via the img element.
+      </p>
+    </article>
+  </body>
+</html>
